@@ -1,4 +1,4 @@
-package DogPark1;
+package com.one.park.dog;
 
 public class DogParkApp {
     public static void main (String[] args) {
