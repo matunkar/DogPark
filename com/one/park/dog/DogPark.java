@@ -10,6 +10,7 @@ public class DogPark {
         maxDogs = 50;
         currentCapacity = 0;
     }
+
     public DogPark(String name, int maxDogs) {
         this.name = name;
         this.maxDogs = maxDogs;
@@ -38,19 +39,22 @@ public class DogPark {
         }
     }
 
-
     public String getName() {
         return name;
     }
+
     public void setName(String name) {
         this.name = name;
     }
+
     public int getMaxDogs() {
         return maxDogs;
     }
+
     public void setMaxDogs(int maxDogs) {
         this.maxDogs = maxDogs;
     }
+
     public int getCurrentCapacity() {
         return currentCapacity;
     }

@@ -2,6 +2,7 @@ package com.two.park.dog;
 
 import java.util.UUID;
 import com.two.park.dog.utils.*;
+import java.util.Random;
 
 public class Dog {
     private String name;
@@ -18,7 +19,7 @@ public class Dog {
         this.name = name;
     }
 
-    public String getNaString() {
+    public String getName() {
         return name;
     }
 
@@ -30,5 +31,13 @@ public class Dog {
         return tag;
     }
 
+    public static class DogNames {
+        public static String[] names = {"Heidi", "Cameron", "Ellen", "Amelia", "Declan", "Turner", "Winston", "Ryland", "Deacon", "Jessie", "Jared", "Julian", "Sky", "Lucille", "Case", "Bridger", "Darwin"};
+        private static Random randomNum = new Random();
+
+        public static String getRandomName() {
+            return names[randomNum.nextInt(names.length)];
+        }
+    }
 
 }
