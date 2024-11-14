@@ -8,9 +8,10 @@ public class DogParkApp {
     
     public static void main (String[] args) {
         Random randomNum = new Random();
+        
         DogPark evilRidge = new DogPark("Evil Ridge");
         DogPark sickeningStream = new DogPark("Sickening Stream", 77);
-        Dog evilDog = new Dog(Dog.DogNames.getRandomName(), Breed.randomNum.nextInt(10));
+        Dog evilDog = new Dog(Dog.DogNames.getRandomName(), Breed.DALMATION);
         Dog sickeningDog = new Dog(Dog.DogNames.getRandomName(), Breed.SPANIEL);
 
         evilRidge.addDog(evilDog);
